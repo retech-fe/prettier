@@ -19,5 +19,7 @@ module.exports = {
   vueIndentScriptAndStyle: false, // Vue 文件中的 script 和 style 内不用缩进
   endOfLine: 'lf', // 换行符使用 lf
   embeddedLanguageFormatting: 'auto', // 格式化嵌入的内容
-  singleAttributePerLine: false // Html, vue, jsx 中每个属性占一行
+  singleAttributePerLine: false, // Html, vue, jsx 中每个属性占一行
+  plugins: [require('prettier-plugin-tailwindcss')],
+  tailwindConfig: './tailwind.config.js',
 }
